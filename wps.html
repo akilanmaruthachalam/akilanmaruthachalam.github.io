@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Exam Cell Management </title>
+<link rel = "stylesheet" type="text/css" href ="css/wpsstyle.css"/>
+
+</head>
+<body>
+<header>
+<div class= "main">
+<h1>Start an Exam</h1>
+
+<ul>
+<li><a href = "index.html">home</a></li>
+<li><a href = "logstudent.html">log out</a></li>
+
+
+</ul>
+
+
+<input type="file" id="real-file" hidden="hidden" />
+<button type="button" id="custom-button">CHOOSE A FILE</button>
+<span id="custom-text">No file chosen, yet.</span>
+<a class="sub" align="center" href="wp.html">view existing arrangement</a>
+<script type="text/javascript">
+    const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
+customBtn.addEventListener("click", function() {
+  realFileBtn.click();
+});
+
+realFileBtn.addEventListener("change", function() {
+  if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+  } else {
+    customTxt.innerHTML = "No file chosen, yet.";
+  }
+});
+
+</script>
+</div>
+
+
+</header>
+
+</body>
+
+</html>   
