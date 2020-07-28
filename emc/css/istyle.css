@@ -10,11 +10,11 @@ header{
      background-position: center; 
 } 
 h1{
-    color:red;
+    color:brown;
     font-size: 40;
     font-weight: bold;
     font-kerning: auto;
-    font-family: segoe script;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     motion: reverse;
 }
@@ -22,16 +22,19 @@ ul{
      float:right;
      list-style-type: none;
      margin-top: 25px;
+    // background-color:yellowgreen;
 }
 ul li{
     display :inline;
+background-color:yellow;
 }
 ul li a{
     text-decoration: none;
-    color:#fff;
+    color:brown;
     padding: 5px 20px;
     border: 1px solid #fff;
     transition: .4s ease-out;
+    
 }
 ul li a:hover{
     background-color: red;
