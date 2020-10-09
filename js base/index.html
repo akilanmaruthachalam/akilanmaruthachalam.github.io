@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="index.css">
+
+<body>
+   <form >
+       <div class="main">
+           
+           <div class ="header"><br>
+               <h1>Create Account</h1>
+            </div>
+        
+        
+      </br>
+          <div class="un">
+              <label for = "fname">User name</label><br>
+             
+              <input type="text" id ="uname" on="nameChck()"  required >
+              <p id= 'unresult'  ></p>
+              
+          </div> 
+          
+           <div>
+               <label for="emailid">Email</label><br>
+               
+               <input type ="email" id ="emailid" required>
+               <p id= 'emresult' ></p>
+           </div>
+
+           <div class="pass">
+               <label for ="password">Password</label><br>
+              
+                <input type="password" id = 'pswd' required placeholder="min 8 characters">
+                <input type="checkbox" onclick="showpass()">                
+                <p id= 'presult' ></p>
+                <label for ="cpassword">Confirm Password</label><br>
+                <input type="password" id = 'cpswd' required>
+                <input type="checkbox" onclick="showpass()">
+                <p id= 'cpresult' ></p>
+             
+            </div>
+            
+           <div class="phn">
+               <label for ="number" >Mobile number</label><br>
+               <input type="text" id = 'number' required >
+               <p id= 'mnresult'></p> 
+           </div>
+
+           <div class="dob">
+             <label for ="age">Date of Birth (dob)</label><br>
+             <input type ="date" id = 'dob' required>   
+             <p id= 'dresult' ></p>
+            </div>
+            <div class="submit">
+                <button type="submit" onclick="chck()">Continue</button>
+            
+            </div>
+          <div  class="footer">
+               
+           </div>
+      </div>
+
+
+   </form>
+   
+   <script  type = "text/javascript" src="index.js"></script>
+  
+</body>
+</html>
