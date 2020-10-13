@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>E C M </title>
+
+<style>
+  textarea{
+    width: 200px;
+    height:400px;
+  }
+</style>
+</head>
+<body>
+<header>
+<div class= "main">
+<h1> Exam Shedule</h1>
+
+<br>
+student id:
+<input type="text" id ="uid">
+<input type="file" id="inputfile">
+
+<br>
+<br>
+<br>
+<br>
+<textarea id = "s" placeholder="choosen file contents would be displayed here"></textarea>
+
+<button type ="submit" onclick="sass()">submit</button>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDPTpRu5XSUD2dvdzjOkvdqY0wQ2TxHYKU",
+    authDomain: "pro1-cf0f0.firebaseapp.com",
+    databaseURL: "https://pro1-cf0f0.firebaseio.com",
+    projectId: "pro1-cf0f0",
+    storageBucket: "pro1-cf0f0.appspot.com",
+    messagingSenderId: "80000338038",
+    appId: "1:80000338038:web:280ff12a039d58dbe3f757",
+    measurementId: "G-QWYQGD9MZN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="script.js"></script>
+
+</div>
+
+
+</header>
+
+</body>
+
+</html>   
