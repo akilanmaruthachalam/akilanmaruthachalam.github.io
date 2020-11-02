@@ -8,19 +8,36 @@
 <body>
 <div class="header">
   <label >Exam cell Management </label>
-
 </div>
 <div class= "main">
-<label>staff id:</label>
 
+<label>exam name</label>
+<input type="text" id ="examname" placeholder="name of the examination">
+<label>exam id</label>
+<input type="text" id ="examid" placeholder="subject code / id">
+<label>date</label>
+<input type ="date" id = "doe" placeholder="exam date">
+<label>department</label>
+<input type="text" id="department" placeholder="department name">
+<label>year</label>
+<input type="text" id="yr" placeholder="year of students">
+<label>total</label>
+<input type = "number" id = 'tot' placeholder="total students">
+<label>rollno range</label>
+<input type="number" id ="first" placeholder="first rollno">
+
+<input type = "number" id = "last" placeholder="last rollno">
+<label>hall allocation file</label>
 <input type="file" id="inputfile">
-<div class="area">
-  
+<div class="area" id= 'st'>
+  <label>File contents</label>
   <textarea id = "s" placeholder="choosen file contents would be displayed here"></textarea>
 </div>
 
+<button id ="prvbtn" onclick="showcon()">preview</button><br>
 
-<button type ="submit" onclick="qass()">submit</button>
+
+<button type ="submit" id= 'submitbtn' onclick="qass()">submit</button>
 
 
 

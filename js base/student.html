@@ -1,33 +1,50 @@
 <html>
 <head>
 <title>E C M </title>
-
+<link rel="stylesheet" href="student.css">
 <style>
-  textarea{
-    width: 200px;
-    height:400px;
-  }
+ 
 </style>
 </head>
 <body>
+  <br>
+  <br><br>
 <header>
 <div class= "main">
-<h1> Exam Shedule</h1>
+  <br>
+  <br>
+ 
+    
+    <label>dept</label>&nbsp&nbsp
+    <input type="text" id="department" placeholder="department name" required>
+    <label>year</label>&nbsp&nbsp
+    <input type="text" id="yr" placeholder="year of students" required>
+    <label>rollno</label>
+    <input type = "number" id = 'rn' placeholder="unique id " required>
+    
+    <br>
+    
+    
+    <button id ="submitbtn"  onclick="sass()">fetch details</button>
+  
+    
+<div id = "fdet" hidden>
+  <label>course name :</label>
+  <input id = "ex"></input><br>
+  <label>course id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+  <input id = "exid"></input><br>
+  <label>exam date&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+  <input id ="dod"></input><br>
+  <label>department  :</label>
+  <input id = "dep"></input><br>
+  <label>year&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+  <input id ="year"></input><br>
 
-<br>
-student id:
-<input type="text" id ="uid">
-<input type="file" id="inputfile">
-
-<br>
-<br>
-<br>
-<br>
-<textarea id = "s" placeholder="choosen file contents would be displayed here"></textarea>
-
-<button type ="submit" onclick="sass()">submit</button>
-
-
+  <label>seat no&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+  <input id="place"></input><br><br>
+  <br>
+  
+</div>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
@@ -54,7 +71,7 @@ student id:
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
-<script src="script.js"></script>
+<script src="scriptss.js"></script>
 
 </div>
 
