@@ -1,5 +1,4 @@
 body {
-  background-image: url("https://images.unsplash.com/photo-1593643946890-b5b85ade6451?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1229&q=80");
   background-size: cover;
   background-repeat: no-repeat;
   /* box-sizing: unset; */
@@ -7,6 +6,7 @@ body {
 }
 
 .main {
+  background-image: url("https://images.unsplash.com/photo-1593643946890-b5b85ade6451?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1229&q=80");
   margin: 4em auto;
   box-sizing: content-box;
   border: 2px solid rgb(116, 116, 116);
