@@ -50,7 +50,7 @@ function qass() {
       year: year,
       
       
-      seatno:arr.split('-')[i],
+      seatno:arr.split('.')[i],
     })
   }
  
