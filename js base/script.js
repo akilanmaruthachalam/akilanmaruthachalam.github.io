@@ -9,7 +9,7 @@ const database = firebase.database();
     document.getElementById('inputfile').addEventListener('change', function ()
     {
       
-      alert(String(document.getElementById('first').value));
+      alert(String(document.getElementById('file loaded').value));
             var fr=new FileReader();
             fr.onload=function(){ 
               document.getElementById('output'); 
