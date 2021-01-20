@@ -4,12 +4,6 @@ let a = document.getElementById('s');
       let x ;
 const database = firebase.database();
  
-  // initiating variables
- 
-  
-
-
-
 
 
     document.getElementById('inputfile').addEventListener('change', function ()
