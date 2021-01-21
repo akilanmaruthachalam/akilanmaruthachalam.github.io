@@ -33,7 +33,7 @@ function qass() {
   var total = document.getElementById("tot").value;
   var first = document.getElementById("first").value;
   var last = document.getElementById("last").value;
-  for (i = first; i < last; i++) {
+  for (i = first; i <= last; i++) {
     database.ref('user/'+year+dept+i).set({
       
       examname: ename,
